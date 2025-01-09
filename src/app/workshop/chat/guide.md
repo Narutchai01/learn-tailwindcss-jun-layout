@@ -13,7 +13,7 @@ Feel free to add your creativity on top of the tasks.
 
 - [x] standalone layout to keep the footer on the screen
 - [x] add Rail and Trigger (at header) to collapse left-sidebar to `80px`
-  - [ ] use different icons between collapse/uncollapse states
+  - [x] use different icons between collapse/uncollapse states
 - [x] hide the chat list on mobile and open it as a drawer
 - [x] hide the right sidebar and open it when clicking the "more" button at the end of the header
   - [x] change the icon from dot to close when the right sidebar open

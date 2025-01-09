@@ -1,5 +1,6 @@
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { ChatItem } from "@/components/chat/ChatItem";
+import { TooltipContent, TooltipTrigger } from "../ui/tooltip";
 
 export interface Chat {
   id: string;
@@ -20,15 +21,17 @@ interface ChatListProps {
 export function ChatList({ chats, selectedId, onSelect }: ChatListProps) {
   return (
     <ScrollArea className="h-full">
-      <div className="flex flex-col gap-1 p-2">
-        {chats.map((chat) => (
-          <ChatItem
-            key={chat.id}
-            chat={chat}
-            selected={chat.id === selectedId}
-            onClick={() => onSelect?.(chat.id)}
-          />
-        ))}
+      <div className=" jun-sidebarContainer">
+        <div className="flex flex-col gap-1 p-2">
+          {chats.map((chat) => (
+                <ChatItem
+                  key={chat.id}
+                  chat={chat}
+                  selected={chat.id === selectedId}
+                  onClick={() => onSelect?.(chat.id)}
+                />
+          ))}
+        </div>
       </div>
     </ScrollArea>
   );
